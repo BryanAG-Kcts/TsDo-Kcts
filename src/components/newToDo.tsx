@@ -16,7 +16,7 @@ export const ToDoNew : React.FC<ToDoNewProps> = ({ pushNewToDo }) => {
   }
 
   return (
-    <form onSubmit={(e : React.ChangeEvent<HTMLFormElement>) => submitToDo(e)} className='flex flex-col justify-center gap-3 p-3 bg-gray-100 rounded'>
+    <form onSubmit={(e : React.ChangeEvent<HTMLFormElement>) => submitToDo(e)} className='flex flex-col justify-center flex-1 gap-3 p-3 bg-gray-100 rounded'>
       <input name='name' className='rounded ' type='text' placeholder='nombre de la tarea' />
       <textarea name='desc' className='rounded resize-none' placeholder='Descripción de la tarea' />
 

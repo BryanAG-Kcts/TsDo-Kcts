@@ -10,6 +10,8 @@ interface ToDoBodyListProps {
 }
 
 export const ToDoBodyList : React.FC<ToDoBodyListProps> = ({ listToDo, removeToDo, completeToDo }) => {
+  if (listToDo.length === 0) return <p>No se encontraron resultados</p>
+
   return (
     <main className='flex flex-col flex-1 gap-4'>
       {

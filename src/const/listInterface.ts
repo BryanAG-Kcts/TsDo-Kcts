@@ -9,6 +9,8 @@ export interface listToDoProps {
     complete: boolean
 }
 
+export type listToDoPropsDefault = listToDoProps[] | []
+
 export interface priorityColor {
     name : string,
     color : string
